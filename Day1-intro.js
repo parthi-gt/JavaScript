@@ -32,7 +32,7 @@ b=300
 console.log(b) //Re-assignment allowed
 
 
-//CONST-bLOCK & iMMUTABLE(can not be changed)
+//CONST-BLOCK & iMMUTABLE(can not be changed)
 
 const c=500
 console.log(c)
@@ -74,8 +74,7 @@ console.log(abc)
 var abc=104
 
 {
-    var abc=2004
-    //will print only local value because reassignment global value
+    var abc=2004 //will print only local value because reassignment global value
 }
 console.log(abc)
 
@@ -116,3 +115,87 @@ console.log(xyz)
 //     //Cannot redeclare block-scoped variable 'xyz'.
 // }
 // console.log(xyz)
+
+
+// // 1. String — text
+// let name = "Hello";
+
+// // 2. Number — integers and decimals
+// let score = 99;
+// let price = 4.99;
+
+// // 3. Boolean — true or false
+// let isLoggedIn = true;
+
+// // 4. Undefined — declared but not assigned
+// let x;
+// console.log(x); // undefined
+
+// // 5. Null — intentionally empty
+// let user = null;
+
+// // 6. BigInt — very large integers
+// let bigNum = 9007199254740991n;
+
+// // 7. Symbol — unique identifier
+// let id = Symbol("id");
+
+// // 8. Object — collections of key-value pairs
+// //    (Arrays and Functions are also objects)
+
+// let person = { name: "Bob", age: 30 };  // Object
+// let colors = ["red", "green", "blue"];  // Array
+// function greet() { return "Hi!"; }      // Function
+
+
+// let name = "Hello";           // ← No console.log
+// let score = 99;               // ← No console.log
+// let price = 4.99;             // ← No console.log
+// let isLoggedIn = true;        // ← No console.log
+// let x;
+// console.log(x);               // ← This prints: undefined
+// let user = null;              // ← No console.log
+// let bigNum = 9007199254740991n;  // ← No console.log
+// let id = Symbol("id");        // ← No console.log
+
+
+let name = "Hello";
+console.log(name);
+
+let score = 99;
+console.log(score);
+
+let price = 4.99;
+console.log(price);
+
+let isLoggedIn = true;
+console.log(isLoggedIn);
+
+let x;
+console.log(x);
+
+let user = null;
+console.log(user);
+
+let bigNum = 9007199254740991n;
+console.log(bigNum);
+
+let id = Symbol("id");
+console.log(id);
+
+// 8. Object — collections of key-value pairs
+//    (Arrays and Functions are also objects)
+
+let person = { name: "Bob", age: 30 };
+console.log(person);
+
+let colors = ["red", "green", "blue"];
+console.log(colors);
+
+function greet() { return "Hi!"; }
+console.log(greet());           // Calls the function and logs result
+// OR
+console.log(greet);             // Logs the function itself
+
+
+// to run node Day1-intro.js
